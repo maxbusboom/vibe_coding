@@ -17,13 +17,14 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'), // Changed from 'dist' to 'docs' for GitHub Pages
   },
   plugins: [
     new CopyPlugin({
       patterns: [
         { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
         { from: 'src/index.html', to: 'index.html' },
+        { from: '.nojekyll', context: './', noErrorOnMissing: true },
       ],
     }),
   ],

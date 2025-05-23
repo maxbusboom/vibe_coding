@@ -19,6 +19,10 @@ Ass-teroids is a space shooter game where you control a spaceship and must destr
 - Arrow Up (or W) to accelerate
 - Arrow Left/Right (or A/D) to rotate
 
+## Play Online
+
+You can play the game online at: https://your-username.github.io/ass-teroids/
+
 ## Installation
 
 1. Clone this repository
@@ -36,6 +40,21 @@ To build the project:
 ```
 npm run build
 ```
+
+## Deployment to GitHub Pages
+
+This project is set up for easy deployment to GitHub Pages:
+
+1. Fork or clone this repository
+2. Update the repository name in `src/entities/asteroid.ts` if needed (where it checks for `github.io`)
+3. Run `npm run deploy` to build the project
+4. Push the code to your GitHub repository
+5. Go to repository Settings → Pages
+6. Set the Source to "Deploy from a branch"
+7. Select the branch (usually `main` or `master`) and set the folder to `/docs`
+8. Click Save and wait for the deployment to complete
+
+The game will be available at `https://your-username.github.io/ass-teroids/`
 
 ## License
 

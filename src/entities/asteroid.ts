@@ -31,14 +31,16 @@ export class Asteroid extends Entity {
         // Load the butt image if not already loaded
         if (!Asteroid.buttImage) {
             Asteroid.buttImage = new Image();
+            // Use relative paths that will work both locally and on GitHub Pages
+            const basePath = window.location.pathname.includes('github.io') ? '/ass-teroids' : '';
             // First try to load the PNG file
-            Asteroid.buttImage.src = 'assets/butt.png';
+            Asteroid.buttImage.src = `${basePath}/assets/butt.png`;
             Asteroid.buttImage.onload = () => {
                 Asteroid.imageLoaded = true;
             };
             Asteroid.buttImage.onerror = () => {
                 // If PNG fails, try the SVG fallback
-                Asteroid.buttImage!.src = 'assets/butt.svg';
+                Asteroid.buttImage!.src = `${basePath}/assets/butt.svg`;
                 Asteroid.buttImage!.onload = () => {
                     Asteroid.imageLoaded = true;
                 };
