@@ -51,7 +51,7 @@ This project is set up for easy deployment to GitHub Pages:
 4. Push the code to your GitHub repository
 5. Go to repository Settings → Pages
 6. Set the Source to "Deploy from a branch"
-7. Select the branch (usually `main` or `master`) and set the folder to `/docs`
+7. Select the branch (usually `main` or `master`) and set the folder to `/ (root)`
 8. Click Save and wait for the deployment to complete
 
 The game will be available at `https://your-username.github.io/your-repository-name/`
