@@ -17,20 +17,20 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'docs'), // Changed from 'dist' to 'docs' for GitHub Pages
+    path: path.resolve(__dirname, ''), // Output directly to root directory
   },
   plugins: [
     new CopyPlugin({
       patterns: [
         { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
-        { from: 'src/index.html', to: 'index.html' },
+        // Don't copy index.html as we've updated the root one
         { from: '.nojekyll', context: './', noErrorOnMissing: true },
       ],
     }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'docs'),
+      directory: path.join(__dirname, ''),
     },
     compress: true,
     port: 9000,

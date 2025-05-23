@@ -49,7 +49,7 @@ This document provides detailed instructions for deploying the Ass-teroids game 
    - Scroll down to the "GitHub Pages" section (or navigate to "Pages" in the sidebar)
    - Under "Source", select "Deploy from a branch"
    - From the branch dropdown, select your main branch (usually `main` or `master`)
-   - From the folder dropdown, select `/docs`
+   - From the folder dropdown, select `/ (root)`
    - Click "Save"
 
 6. **Access Your Game**

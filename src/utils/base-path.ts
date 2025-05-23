@@ -5,5 +5,6 @@ export function getBasePath(): string {
     
     // If on GitHub Pages, we need the repository name as the base path
     // Modify this if your repository name is different
+    // With our new structure, assets are in the root
     return isGithubPages ? '/ass-teroids' : '';
 }
