@@ -34,5 +34,8 @@ module.exports = {
     },
     compress: true,
     port: 9000,
+    devMiddleware: {
+      writeToDisk: true, // This will write files to disk during development
+    },
   },
 };

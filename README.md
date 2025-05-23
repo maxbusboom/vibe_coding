@@ -46,15 +46,17 @@ npm run build
 This project is set up for easy deployment to GitHub Pages:
 
 1. Fork or clone this repository
-2. Update the repository name in `src/entities/asteroid.ts` if needed (where it checks for `github.io`)
-3. Run `npm run deploy` to build the project
+2. Update the repository name in `src/utils/base-path.ts` if needed
+3. Run `npm run build` to build the project
 4. Push the code to your GitHub repository
 5. Go to repository Settings → Pages
 6. Set the Source to "Deploy from a branch"
 7. Select the branch (usually `main` or `master`) and set the folder to `/docs`
 8. Click Save and wait for the deployment to complete
 
-The game will be available at `https://your-username.github.io/ass-teroids/`
+The game will be available at `https://your-username.github.io/your-repository-name/`
+
+If your repository name isn't `ass-teroids`, make sure to update the path in `src/utils/base-path.ts`.
 
 ## License
 

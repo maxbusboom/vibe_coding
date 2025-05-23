@@ -1,5 +1,6 @@
 import { Entity } from './entity';
 import { Vector } from '../utils/vector';
+import { getBasePath } from '../utils/base-path';
 
 export type AsteroidSize = 'large' | 'medium' | 'small';
 
@@ -31,8 +32,8 @@ export class Asteroid extends Entity {
         // Load the butt image if not already loaded
         if (!Asteroid.buttImage) {
             Asteroid.buttImage = new Image();
-            // Use relative paths that will work both locally and on GitHub Pages
-            const basePath = window.location.pathname.includes('github.io') ? '/ass-teroids' : '';
+            // Get the base path based on environment
+            const basePath = getBasePath();
             // First try to load the PNG file
             Asteroid.buttImage.src = `${basePath}/assets/butt.png`;
             Asteroid.buttImage.onload = () => {
