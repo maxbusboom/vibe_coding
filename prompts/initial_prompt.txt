@@ -1,0 +1,8 @@
+We will program the game Ass-teroids. This game will be just like the game
+Asteroids, but the asteroids will be shaped like buttocks.
+
+Implementation Constraints: This game will be written in HTML and Typescript.
+There will be a single index.html file in the root of the project that will load
+the game. The game will be a single page application, but may involve multiple
+Typescript files. I also want an NPM package.json file, with a start script that
+will run the game.

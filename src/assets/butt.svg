@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g transform="translate(50,50)">
+    <!-- Left cheek -->
+    <path d="M-20,-10 Q-30,10 -20,30 Q-5,45 0,30 Q-15,35 -20,-10" fill="tan" stroke="brown" stroke-width="1"/>
+    <!-- Right cheek -->
+    <path d="M20,-10 Q30,10 20,30 Q5,45 0,30 Q15,35 20,-10" fill="tan" stroke="brown" stroke-width="1"/>
+  </g>
+</svg>
